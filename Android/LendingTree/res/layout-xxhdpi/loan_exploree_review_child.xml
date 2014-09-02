@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvreviewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty_pixel"
+        android:layout_marginTop="@dimen/thirty_pixel"
+        android:text="@string/first_financial_services"
+        android:textColor="@color/black"
+        android:textSize="@dimen/nineteen_sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarReview"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/thirty_pixel"
+        android:layout_marginTop="@dimen/two_pixel"
+        android:numStars="@integer/num_five"
+        android:progressDrawable="@drawable/ratebar_theme"
+        android:stepSize="0.1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/thirty_pixel"
+        android:layout_marginTop="@dimen/six_pixel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvbyOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/by"
+            android:paddingRight="@dimen/ten_pixel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/thirteen_sp" />
+
+        <TextView
+            android:id="@+id/tvreviewBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_exploree_review_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/thirteen_sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvReviewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty_pixel"
+        android:layout_marginTop="@dimen/seven_pixel"
+        android:paddingBottom="@dimen/forty_five_pixel"
+        android:text="@string/loan_exploree_review_descriprion"
+        android:textColor="@color/black"
+        android:textSize="@dimen/seventeen_sp" />
+
+</LinearLayout>

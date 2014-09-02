@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is used in RemainingBalance Fragment -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/forty_pixel_xxhdpi"
+        android:layout_marginRight="@dimen/forty_pixel_xxhdpi"
+        android:background="@color/Light_Grey"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/twevel_thousand_eighty_pixel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_Remaining_Balance_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dollar"
+                android:textColor="@color/White"
+                android:textSize="@dimen/twenty_pt" />
+
+            <EditText
+                android:id="@+id/et_Remaining_Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:digits="0123456789,"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/White"
+                android:textSize="@dimen/twenty_pt" />
+
+            <TextView
+                android:id="@+id/tvDownPaymentPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/forty_five_pixel"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:textColor="@color/White"
+                android:textSize="@dimen/seven_pt"  />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb_Remaining_Balance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_seven_pixel_xxhdpi"
+            android:layout_marginRight="@dimen/forty_seven_pixel_xxhdpi"
+            android:max="@integer/num_two_hundred"
+            android:maxHeight="@dimen/six_dip"
+            android:minHeight="@dimen/six_dip"
+            android:paddingBottom="@dimen/ten_pixel"
+            android:paddingLeft="@dimen/zero_px"
+            android:paddingRight="@dimen/zero_px"
+            android:paddingTop="@dimen/ten_pixel"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/slider_circle"
+            android:thumbOffset="@dimen/two_point_nine_five" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_seven_pixel_xxhdpi"
+            android:layout_marginRight="@dimen/forty_seven_pixel_xxhdpi"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_0_Val"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/num_cols"
+                android:text="@string/zero_percent"
+                android:textColor="@color/White"
+                android:textSize="@dimen/seven_pt" />
+
+            <TextView
+                android:id="@+id/tv_100_Val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hundred_percent"
+                android:textColor="@color/White"
+                android:textSize="@dimen/seven_pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btContinue_Reamining_Balance"
+            android:layout_width="@dimen/four_seventy_nine_px"
+            android:layout_height="@dimen/one_fourty_two_pixel"
+            android:layout_gravity="center"
+            android:background="@drawable/buttoncontinue"
+            android:padding="@dimen/five_dp"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</LinearLayout>

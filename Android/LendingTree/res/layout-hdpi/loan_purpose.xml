@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is used in LoanType Fragment -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_background"
+        android:layout_marginLeft="@dimen/seventeen_pixel"
+        android:layout_marginRight="@dimen/seventeen_pixel"
+        android:background="@color/Light_Grey"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_Purchase_Mortgage_Negotiator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seventy_pixel"
+            android:layout_marginBottom="@dimen/seventeen_pixel"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+            android:background="@drawable/selected_border"
+            android:drawableRight="@drawable/orangerightarrow"
+            android:gravity="center|left"
+            android:padding="@dimen/list_padding"
+            android:text="@string/purchase"
+            android:textSize="@dimen/page_sagment_header" />
+
+        <TextView
+            android:id="@+id/tv_Refinance_Mortgage_Negotiator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seventy_pixel"
+            android:layout_below="@+id/tv_Purchase_Mortgage_Negotiator"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+            android:background="@color/White"
+            android:drawableRight="@drawable/orangerightarrow"
+            android:gravity="center|left"
+            android:padding="@dimen/list_padding"
+            android:text="@string/refinance"
+            android:textSize="@dimen/page_sagment_header" />
+    </RelativeLayout>
+
+</LinearLayout>

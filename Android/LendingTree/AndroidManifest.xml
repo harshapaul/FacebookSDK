@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lendingtree.view"
+    android:versionCode="14"
+    android:versionName="1.4" >
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <application
+        android:name="com.lendingtree.application.LendingTreeApplication_"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lendingtree.view.SplashActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER"  />
+               
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lendingtree.view.SplashLendingTreeActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lendingtree.view.HomeAffordabilityActivity_"
+            android:theme="@style/Theme.AndroidDevelopers"
+            android:icon="@drawable/menuicon"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.lendingtree.view.LoanExplorerActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/menuicon"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgageNegotiatorActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/menuicon"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgagePaymentActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/menuicon"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.PinnedSectionListActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.lendingtree.view.HomeAffordabilityActivity_"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.LoanOfferDetailsActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.LoanOfferEmailActivity_"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.LoanOffersActivity_"
+            android:label="@string/app_name"
+            android:icon="@drawable/menuicon"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgagePaymentDetailsActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.FilterYourResultsActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgageNegotiatorChartActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.LoanExpReviewActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgageNagotiatorBestOfferActivity_"
+            android:label="@string/app_name"
+            android:icon="@drawable/menuicon"
+            android:screenOrientation="portrait"
+           android:theme="@style/Theme.AndroidDevelopers" />
+        <activity
+            android:name="com.lendingtree.view.MortgageOfferEmailActivity_"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AndroidDevelopers" />
+          <activity android:name="com.lendingtree.view.CustomDialogActivity"
+              android:label="  "
+                android:theme="@style/Theme.CustomDialog">
+            
+        </activity>
+    </application>
+
+</manifest>

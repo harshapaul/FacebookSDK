@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is used in HouseValue Fragment -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:id="@+id/llHouseValue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_background_mdpi"
+        android:layout_marginLeft="@dimen/eleven_pixel"
+        android:layout_marginRight="@dimen/eleven_pixel"
+        android:background="@color/Light_Grey"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+            
+            <TextView
+                android:id="@+id/tv_House_Value_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dollar"
+                android:textColor="@color/White"
+                android:textSize="@dimen/twenty_pt"
+                />
+            
+            <EditText
+            android:id="@+id/et_House_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789,"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textSize="@dimen/twenty_pt"
+            android:textColor="@color/White" />
+             
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb_House_Value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="270"
+            android:maxHeight="@dimen/six_dip"
+            android:minHeight="@dimen/six_dip"
+            android:paddingBottom="@dimen/ten_pixel"
+            android:paddingLeft="@dimen/zero_px"
+            android:paddingRight="@dimen/zero_px"
+            android:paddingTop="@dimen/two_point_nine_five"  	
+            android:thumb="@drawable/slider_circle"
+            android:thumbOffset="@dimen/two_point_nine_five"
+            android:progressDrawable="@drawable/custom_seekbar" 
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+             />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_50_Value"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/seven_pt"
+                android:textColor="@color/White"
+                android:layout_weight="@integer/num_cols"
+                android:text="@string/fifty_k" />
+
+            <TextView
+                android:id="@+id/tv_1_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/seven_pt"
+                android:textColor="@color/White"
+                android:text="@string/two_m" />
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/btContinue_House_Value"
+            android:layout_width="@dimen/one_fourty_two_pixel"
+            android:layout_height="@dimen/fourty_three_pixel"
+            android:background="@drawable/buttoncontinue"
+            android:textColor="@color/White"
+            android:padding="@dimen/five_dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

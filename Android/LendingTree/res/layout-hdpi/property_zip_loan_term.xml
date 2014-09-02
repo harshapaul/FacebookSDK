@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout is used in Fragment -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llproperty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_background"
+        android:layout_marginLeft="@dimen/seventeen_pixel"
+        android:layout_marginRight="@dimen/seventeen_pixel"
+        android:background="@color/Light_Grey"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_LoanTerm_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:text="@string/loan_term"
+            android:textColor="@color/White"
+            android:textSize="@dimen/nine_pt" />
+
+        <Spinner
+            android:id="@+id/spLoanTerm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seventy_pixel"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+            android:background="@color/White"
+            android:gravity="left|center"
+            android:paddingBottom="@dimen/five_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:prompt="@string/select_loan"
+            android:spinnerMode="dialog"
+            android:text="@string/thirty_year_fixed"
+            android:textSize="@dimen/page_sagment_header" />
+
+        <TextView
+            android:id="@+id/tv_ZipMortgage_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginTop="@dimen/twentyone_pixel"
+            android:text="@string/zip_code"
+            android:textColor="@color/White"
+            android:textSize="@dimen/nine_pt" />
+
+        <EditText
+            android:id="@+id/etZipMortgage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/seventy_pixel"
+            android:layout_marginLeft="@dimen/twentyone_pixel"
+            android:layout_marginRight="@dimen/twentyone_pixel"
+            android:background="@color/White"
+            android:hint="@string/enter_zip"
+            android:inputType="number"
+            android:maxLength="@integer/num_five"
+            android:padding="@dimen/five_dp"
+            android:textSize="@dimen/page_sagment_header" />
+
+        <Button
+            android:id="@+id/btContinue_Property_Zip_Loan_Term"
+            android:layout_width="@dimen/twohundered_thirteen_px"
+            android:layout_height="@dimen/sixty_three_px"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentyone_pixel"
+            android:background="@drawable/buttoncontinue"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/five_dp"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</LinearLayout>

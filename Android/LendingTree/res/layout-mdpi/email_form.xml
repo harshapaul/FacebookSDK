@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Dark_Grey"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twenty_five_pixel" >
+
+            <TextView
+                android:id="@+id/tvEmailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/first_financial_services"
+                android:textColor="@color/White"
+                android:textSize="@dimen/page_sagment_header" />
+
+            <LinearLayout
+                android:id="@+id/llRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmailTitle"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvNLMSemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tvEmailTitle"
+                    android:singleLine="true"
+                    android:text="NLMS12"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarEmail"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten_pixel"
+                    android:numStars="@integer/num_five"
+                    android:progressDrawable="@drawable/ratebar_theme"
+                    android:stepSize="0.1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvheaderPhoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/llRating"
+                android:text="@string/loan_exploree_review_rev"
+                android:textColor="@color/White"
+                android:textSize="@dimen/twelve_sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/three_thirty_pixel"
+            android:layout_marginLeft="@dimen/eleven_pixel"
+            android:layout_marginRight="@dimen/eleven_pixel"
+            android:background="@color/Light_Grey"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty_eight_pixel_mdpi"
+                android:layout_marginBottom="@dimen/fourteen_pixel"
+                android:layout_marginLeft="@dimen/fourteen_pixel"
+                android:layout_marginRight="@dimen/fourteen_pixel"
+                android:background="@color/White"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/first_name"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:padding="@dimen/eight_dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty_eight_pixel_mdpi"
+                android:layout_marginBottom="@dimen/fourteen_pixel"
+                android:layout_marginLeft="@dimen/fourteen_pixel"
+                android:layout_marginRight="@dimen/fourteen_pixel"
+                android:background="@color/White"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/last_name"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:padding="@dimen/eight_dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty_eight_pixel_mdpi"
+                android:layout_marginBottom="@dimen/fourteen_pixel"
+                android:layout_marginLeft="@dimen/fourteen_pixel"
+                android:layout_marginRight="@dimen/fourteen_pixel"
+                android:weightSum="2" >
+
+                <EditText
+                    android:id="@+id/edtPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/forty_eight_pixel_mdpi"
+                    android:layout_marginRight="@dimen/five_pixel"
+                    android:layout_weight="1.95"
+                    android:background="@color/White"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="@integer/num_ten"
+                    android:padding="@dimen/eight_dp" />
+
+                <ImageView
+                    android:id="@+id/ivPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="5px"
+                    android:layout_weight="0.05"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/help" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty_eight_pixel_mdpi"
+                android:layout_marginLeft="@dimen/fourteen_pixel"
+                android:layout_marginRight="@dimen/fourteen_pixel"
+                android:background="@color/White"
+                android:hint="@string/email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/eight_dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btSendEmail"
+                android:layout_width="@dimen/one_fourty_two_pixel"
+                android:layout_height="@dimen/fourty_three_pixel"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twenty_pixel"
+                android:background="@drawable/btn_send_email"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/tv_SecurityFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eleven_pixel"
+            android:layout_marginRight="@dimen/eleven_pixel"
+            android:layout_marginTop="@dimen/forty_pixel_xxhdpi"
+            android:gravity="left"
+            android:text="@string/disclaimer_text"
+            android:textColor="@color/White"
+            android:textSize="@dimen/five_pt" />
+        -->
+
+        <TextView
+            android:id="@+id/emailFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/eleven_pixel"
+            android:layout_marginLeft="@dimen/eighteen_pixel"
+            android:layout_marginRight="@dimen/eighteen_pixel"
+            android:text="@string/footer_details"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/four_pt" />
+        <!-- android:layout_marginTop="@dimen/fivfty_pixel" -->
+        <!--
+             <TextView
+            android:id="@+id/emailFooterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/eleven_pixel"
+            android:layout_marginRight="@dimen/eleven_pixel"
+            android:text="@string/footer_details"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/five_pt" />
+        -->
+    </LinearLayout>
+
+</ScrollView>

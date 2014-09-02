@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvFooter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/seventeen_pixel"
+    android:layout_marginRight="@dimen/seventeen_pixel"
+	android:layout_marginTop="@dimen/fivfteen_pixel"
+	android:paddingTop="@dimen/fivfteen_pixel"
+	android:paddingLeft="@dimen/ten_pixel"
+	android:paddingRight="@dimen/ten_pixel"
+    android:layout_weight="@integer/num_cols"
+    android:gravity="center"
+    android:background="@color/Dark_Grey"
+    android:text="@string/footer_text"
+    android:textColor="@color/White"
+    android:textSize="@dimen/twelve_sp"
+    android:paddingBottom="@dimen/fivfteen_pixel" />

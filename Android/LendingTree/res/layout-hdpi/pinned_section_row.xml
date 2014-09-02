@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/black"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/fivfteen_pixel"
+    android:weightSum="@integer/num_four" 
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/monthTV"
+        android:layout_width="@dimen/sixty_dp"
+        android:layout_height="@dimen/forty_pixel_xxhdpi"
+        android:layout_weight="@integer/num_cols"
+        android:gravity="left|center_vertical"
+        android:text="@string/month"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_pixel" />
+
+    <TextView
+        android:id="@+id/principalTV"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="@dimen/forty_pixel_xxhdpi"
+        android:layout_weight="@integer/num_cols"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/ten_pixel"
+        android:text="@string/principal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_pixel" />
+
+    <TextView
+        android:id="@+id/interestTV"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="@dimen/forty_pixel_xxhdpi"
+        android:layout_weight="@integer/num_cols"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/ten_pixel"
+        android:text="@string/interest"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_pixel" />
+
+    <TextView
+        android:id="@+id/balanceTV"
+        android:layout_width="@dimen/hundered_dp"
+        android:layout_height="@dimen/forty_pixel_xxhdpi"
+        android:layout_weight="@integer/num_cols"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/ten_pixel"
+        android:text="@string/balance"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_pixel" />
+
+</LinearLayout>

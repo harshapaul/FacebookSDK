@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Jake Wharton
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- This layout is used in LoanExplorer Activity -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Dark_Grey"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/three_dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btLeft"
+                android:layout_width="@dimen/sixty_pixel"
+                android:layout_height="@dimen/sixty_pixel"
+                android:layout_marginLeft="@dimen/zero_px"
+                android:background="@null"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/whiteleftarrow"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btRight"
+                android:layout_width="@dimen/sixty_pixel"
+                android:layout_height="@dimen/sixty_pixel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/zero_px"
+                android:background="@null"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/whiterightarrow" />
+
+            <TextView
+                android:id="@+id/tvPageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/compare_loan_offers"
+                android:textColor="@color/White"
+                android:textSize="@dimen/page_sagment_header" />
+        </RelativeLayout>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/ten_dip"
+            android:paddingTop="@dimen/five_dip"
+            app:fillColor="@color/White"
+            app:pageColor="@color/Dot"
+            app:radius="@dimen/four_dp"
+            app:strokeWidth="0dip" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_background" />
+
+        <TextView
+            android:id="@+id/tvLoanExplorerFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/seventeen_pixel"
+            android:layout_marginLeft="@dimen/seventeen_pixel"
+            android:layout_marginRight="@dimen/seventeen_pixel"
+            android:text="@string/footer_text"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/four_point_eight_pt" />
+        <!-- android:layout_marginTop="@dimen/two_hundred_pixel" -->
+        <!--
+             <TextView
+            android:id="@+id/tvLoanExplorerFooterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/seventeen_pixel"
+            android:layout_marginRight="@dimen/seventeen_pixel"
+            android:text="@string/footer_details"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/five_pt" />
+        -->
+    </LinearLayout>
+
+</ScrollView>

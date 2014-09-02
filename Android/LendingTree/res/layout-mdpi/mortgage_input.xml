@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout used in MortgagePaymentActivity -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPayment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Grey"
+    android:orientation="vertical"
+    tools:context=".MortgagePymentActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Cream"
+        android:orientation="horizontal" >
+
+        <com.androidplot.pie.PieChart
+            android:id="@+id/chart"
+            android:layout_width="@dimen/one_twenty_pixel"
+            android:layout_height="@dimen/one_sixty_four_pixel" />
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_sixty_four_pixel"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twelve_px"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/ten_pixel"
+                    android:layout_height="@dimen/ten_pixel"
+                    android:background="@color/Dark_Green"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvPrincipleInterest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_pixel"
+                    android:gravity="center"
+                    android:text="@string/principle_interest"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+
+                <TextView
+                    android:id="@+id/tvPrincipleInterestValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_pi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_pixel"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/ten_pixel"
+                    android:layout_height="@dimen/ten_pixel"
+                    android:background="@color/Light_Green"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvPropTaxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_pixel"
+                    android:gravity="center"
+                    android:text="@string/property_taxes"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+
+                <TextView
+                    android:id="@+id/tvPropTaxesValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_pt"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_pixel"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/ten_pixel"
+                    android:layout_height="@dimen/ten_pixel"
+                    android:background="@color/Medium_Green"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvHomeIns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_pixel"
+                    android:gravity="center"
+                    android:text="@string/homeowner_ins"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+
+                <TextView
+                    android:id="@+id/tvHomeInsValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_hi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_pixel"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/ten_pixel"
+                    android:layout_height="@dimen/ten_pixel"
+                    android:background="@color/Bar_Green"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvHOA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_pixel"
+                    android:gravity="center"
+                    android:text="@string/hoa_dues"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+
+                <TextView
+                    android:id="@+id/tvHOAvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_hoa"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight_pixel"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/ten_pixel"
+                    android:layout_height="@dimen/ten_pixel"
+                    android:background="@color/Piechart_Green"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvPMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_pixel"
+                    android:gravity="center"
+                    android:text="@string/pmi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+
+                <TextView
+                    android:id="@+id/tvPMIValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_pmi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/twelve_px"
+                android:layout_marginTop="@dimen/five_pixel"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_pixel"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/total_monthly_payment"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/twelve_px"
+                    android:gravity="right"
+                    android:text="@string/default_total"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/twelve_px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/fourteen_pixel"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eleven_pixel"
+                android:layout_marginRight="@dimen/eleven_pixel"
+                android:background="@color/Light_Grey"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="@dimen/fivfteen_pixel"
+                android:paddingRight="@dimen/fivfteen_pixel"
+                android:paddingTop="@dimen/twelve_px" >
+
+                <TextView
+                    android:id="@+id/tvHomePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/home_price"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/home_price"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/page_sagment_header" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvHomePriceValue"
+                    android:text="@string/dollar"
+                    android:textColor="@color/Text_Yellow"
+                    android:textSize="@dimen/page_sagment_header" />
+
+                <EditText
+                    android:id="@+id/tvHomePriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/home_price"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789,"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:text="@string/default_homeprice"
+                    android:textColor="@color/Text_Yellow"
+                    android:textSize="@dimen/page_sagment_header" />
+
+                <TextView
+                    android:id="@+id/tvDownPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/home_price"
+                    android:layout_below="@+id/home_price"
+                    android:layout_marginTop="@dimen/eleven_pixel"
+                    android:text="@string/down_payment"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_poit_fourty_four_pt" />
+
+                <TextView
+                    android:id="@+id/tvDownPaymentValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/down_payment"
+                    android:layout_alignRight="@+id/down_payment"
+                    android:singleLine="true"
+                    android:text="@string/default_downpayment"
+                    android:textColor="@color/Text_Yellow"
+                    android:textSize="@dimen/seven_poit_fourty_three_pt" />
+
+                <TextView
+                    android:id="@+id/tvMortgageRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvDownPayment"
+                    android:layout_below="@+id/down_payment"
+                    android:layout_marginTop="@dimen/eleven_pixel"
+                    android:text="@string/mortgage_rate"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/page_sagment_header" />
+
+                <SeekBar
+                    android:id="@+id/home_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHomePrice"
+                    android:max="270"
+                    android:maxHeight="@dimen/six_dip"
+                    android:minHeight="@dimen/six_dip"
+                    android:paddingLeft="@dimen/zero_px"
+                    android:paddingRight="@dimen/zero_px"
+                    android:paddingTop="@dimen/zero_px"
+                    android:progress="@integer/zero"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/slider_circle"
+                    android:thumbOffset="@dimen/two_point_nine_five" />
+
+                <SeekBar
+                    android:id="@+id/down_payment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDownPayment"
+                    android:max="@integer/hundred"
+                    android:maxHeight="@dimen/six_dip"
+                    android:minHeight="@dimen/six_dip"
+                    android:paddingLeft="@dimen/zero_px"
+                    android:paddingRight="@dimen/zero_px"
+                    android:paddingTop="@dimen/zero_px"
+                    android:progress="@integer/zero"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/slider_circle"
+                    android:thumbOffset="@dimen/two_point_nine_five" />
+
+                <SeekBar
+                    android:id="@+id/mortgage_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMortgageRate"
+                    android:max="@integer/num_fourty_four"
+                    android:maxHeight="@dimen/six_dip"
+                    android:minHeight="@dimen/six_dip"
+                    android:paddingBottom="@dimen/ten_pixel"
+                    android:paddingLeft="@dimen/zero_px"
+                    android:paddingRight="@dimen/zero_px"
+                    android:paddingTop="@dimen/zero_px"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/slider_circle"
+                    android:thumbOffset="@dimen/two_point_nine_five" />
+
+                <TextView
+                    android:id="@+id/tvpercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/mortgage_rate"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/mortgage_rate"
+                    android:text="@string/home_affordability_percentage"
+                    android:textColor="@color/Text_Yellow"
+                    android:textSize="@dimen/page_sagment_header" />
+
+                <EditText
+                    android:id="@+id/tvMortgageRateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/mortgage_rate"
+                    android:layout_toLeftOf="@+id/tvpercentage"
+                    android:layout_toRightOf="@+id/tvMortgageRate"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:gravity="right"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:text="@string/default_mortgagerate"
+                    android:textColor="@color/Text_Yellow"
+                    android:textSize="@dimen/page_sagment_header" >
+                </EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llAssumptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/eleven_pixel"
+                android:layout_marginTop="@dimen/ten_pixel"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnAssumption"
+                    android:layout_width="@dimen/twentyone_pixel"
+                    android:layout_height="@dimen/twenty_pixel"
+                    android:background="@drawable/plus"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tvAssumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten_pixel"
+                    android:text="@string/assumption"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/page_sagment_header" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ltAssumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_pixel"
+                android:layout_marginLeft="@dimen/eleven_pixel"
+                android:layout_marginRight="@dimen/eleven_pixel"
+                android:layout_marginTop="@dimen/fourteen_pixel"
+                android:background="@color/Light_Grey"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/sixteen_pixel"
+                android:paddingLeft="@dimen/fivfteen_pixel"
+                android:paddingRight="@dimen/fivfteen_pixel"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_annual_prpoerty_taxes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_affordability_annual_property_taxes"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_point_eight_pt" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/thirty_five_pixel"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/edtAnnualPropTaxes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="@integer/num_five"
+                        android:paddingLeft="@dimen/five_pixel"
+                        android:text="@string/home_affordability_annual_property_taxes_values"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/page_sagment_header" />
+
+                    <TextView
+                        android:id="@+id/tvPercAssumptions"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/White"
+                        android:gravity="center_vertical"
+                        android:text="@string/home_affordability_percentage"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/page_sagment_header" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_annual_homeowners_insurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ten_pixel"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_affordability_annual_homeowner_insurance"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_point_eight_pt" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/thirty_five_pixel"
+                    android:background="@color/White"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvDollar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/five_pixel"
+                        android:text="@string/home_affordability_dollor"
+                        android:textSize="@dimen/page_sagment_header" />
+
+                    <EditText
+                        android:id="@+id/edtAnnualHomeIns"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:text="@string/home_affordability_annual_homeowner_insurance_value"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/page_sagment_header" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_annual_hoa_dues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ten_pixel"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_affordability_annual_hoa_dues"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_point_eight_pt" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/thirty_five_pixel"
+                    android:background="@color/White"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvDollar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/five_pixel"
+                        android:text="@string/home_affordability_dollor"
+                        android:textSize="@dimen/page_sagment_header" />
+
+                    <EditText
+                        android:id="@+id/edtAnnualHOADues"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:text="@string/home_affordability_down_payment_value"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="@dimen/page_sagment_header" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_loan_trem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ten_pixel"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_affordability_loan_term"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_point_eight_pt" />
+
+                <Spinner
+                    android:id="@+id/spLoanterm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/thirty_five_pixel"
+                    android:background="@color/White"
+                    android:padding="0dip"
+                    android:prompt="@string/select_loan"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:id="@+id/txt_private_mortgage_insurance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ten_pixel"
+                    android:gravity="center_vertical"
+                    android:text="@string/home_affordability_private_mortgage_insurance"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/seven_point_eight_pt" />
+
+                <ToggleButton
+                    android:id="@+id/tbPMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twenty_eight_pixel"
+                    android:background="@drawable/btn_toggle"
+                    android:checked="true"
+                    android:gravity="right"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvMtgPaymentFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/seventeen_pixel"
+                android:layout_marginLeft="@dimen/seventeen_pixel"
+                android:layout_marginRight="@dimen/seventeen_pixel"
+                android:text="@string/footer_text"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/four_pt" />
+            <!-- android:layout_marginTop="@dimen/two_hundred_pixel" -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

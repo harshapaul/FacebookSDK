@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LendingTree</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="github">GitHub</string>
+    <string name="github_label">SlidingMenu on GitHub</string>
+    <string name="instant_mortgage_quotes_title">Instant Mortgage Quotes</string>
+    <string name="loan_explorer_email">Contact</string>
+    <string name="mortgage_payment_title">Mortgage Payment</string>
+    <string name="compare_your_current_offer_title">Compare Your Current Offer</string>
+    <string name="empty"></string>
+    <string name="empty_space"></string>
+    <string name="principle_interest">Principal &amp; Interest</string>
+    <string name="property_taxes">Property Taxes</string>
+    <string name="homeowner_ins">Homeowner\'s Ins.</string>
+    <string name="hoa_dues">HOA Dues</string>
+    <string name="pmi">PMI</string>
+    <string name="home_price">Home Price</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="mortgage_rate">Mortgage Rate</string>
+    <string name="assumption">Assumptions</string>
+    <string name="total_monthly_payment">Total Monthly Pmt</string>
+    <string name="loan_term">Loan Term (years)</string>
+    <string name="thirty_year_fixed">30 Year Fixed</string>
+
+    <!-- Start Home Affordability fields -->
+
+    <string name="home_affordability_title">Home Affordability</string>
+    <string name="home_affordability_conservative_btn">Conservative</string>
+    <string name="home_affordability_moderate_btn">Moderate</string>
+    <string name="home_affordability_aggressive_btn">Aggressive</string>
+    <string name="home_affordability_home_price">Home Price</string>
+    <string name="home_affordability_home_price_value">232,156</string>
+    <string name="home_affordability_loan_price">Loan Amount</string>
+    <string name="home_affordability_loan_price_values">232,156</string>
+    <string name="home_affordability_monthly_income">Monthly Income</string>
+    <string name="home_affordability_monthly_income_values">$2,500</string>
+    <string name="home_affordability_monthly_mortgae_pmt">Mortgage Payment</string>
+    <string name="home_affordability_monthly_mortgae_pmt_value">$700</string>
+    <string name="home_affordability_debt_payment">Debt Payments</string>
+    <string name="home_affordability_debt_payment_values">$0</string>
+    <string name="home_affordability_Income_taxes">Income Taxes</string>
+    <string name="home_affordability_Income_taxes_values">$750</string>
+    <string name="home_affordability_left_over">Left Over</string>
+    <string name="home_affordability_left_over_values">$1,050</string>
+    <string name="home_affordability_annual_income">Annual Income</string>
+    <string name="home_affordability_annual_income_value">30,000</string>
+    <string name="home_affordability_dollor">$</string>
+    <string name="home_affordability_percentage">%</string>
+    <string name="home_affordability_down_payment">Down Payment</string>
+    <string name="home_affordability_down_payment_value">0</string>
+    <string name="home_affordability_mortgage_rate">Mortgage Rate</string>
+    <string name="home_affordability_mortgage_rate_value">2.000</string>
+    <string name="home_affordability_monthly_debts">Monthly Debts </string>
+    <string name="home_affordability_annual_property_taxes">Annual Property Taxes</string>
+    <string name="home_affordability_annual_property_taxes_values">1.140</string>
+    <string name="home_affordability_annual_homeowner_insurance">Annual Homeowner\'s Insurance</string>
+    <string name="home_affordability_annual_homeowner_insurance_value">800</string>
+    <string name="home_affordability_annual_hoa_dues">Annual HOA Dues</string>
+    <string name="home_affordability_loan_term">Loan Term (years)</string>
+    <string name="pre_fix">(Pre&#8211;tax)</string>
+    <string name="home_affordability_private_mortgage_insurance">Private Mortgage Insurance (PMI)</string>
+    <string name="monthly_alert_transparent">This includes recurring monthly debt amounts, including home equity loan payments, car loans, student loans, child support, alimony, your minimum amount payments on any credit card debt, and any other loan that you might have.
+It does not include monthly credit card payments beyond the required minimum, food, entertainment, cell phones, clothing. These items are discertionary expenses.</string>
+
+    <string name="phone_alert_transparent">We take your privacy seriously. You are providing express consent for Lending Tree and this lender to contact you (including through 
+        automated means; e.g.autodialing,text and pre-recorded messaging) via telephone, mobile device (including SMS  and MMS) and/or email, even if your
+         telephone number  is currently listed on any internal, corporate, state, federal or national Do-Not-Call (DNC) list.</string>
+    <!-- End Home Affordability fields -->
+
+
+    <!-- Start Mortgage Negotitor Best Offer -->
+
+    <string name="mortgage_negotitor_bestoffer">Compare Your Current Offer</string>
+    <string name="rate_and_apr">Rate / APR:</string>
+    <string name="rate_and_apr_value">4.375% / 4.458%</string>
+    <string name="higher">HIGHER</string>
+    <string name="origination_charges">Origination Charges:</string>
+    <string name="origination_charges_values">2,960</string>
+    <string name="monthly_payment_doller">Monthly Payments:</string>
+    <string name="monthly_payment_doller_values">1,598</string>
+    <string name="our_best_offers_for_you">Our Best Offers for you</string>
+    <!-- End Mortgage Negotitor Best Offer -->
+
+    <string name="month">Month</string>
+    <string name="principal">Principal</string>
+    <string name="interest">Interest</string>
+    <string name="balance">Balance</string>
+    <!-- Strat Home Screen Activity -->
+    <string name="mortgage_payment_calculator">Mortgage Payment Calculator</string>
+    <string name="home_affordability_calculator">Home Affordability Calculator</string>
+    <string name="instant_mortgage_quotes">Instant Mortgage Quotes</string>
+    <string name="compare_your_current_offer">Compare Your Current Offer</string>
+
+    <!-- End Home Screen Activity -->
+
+
+    <!-- Start Loan Explorer Review Deatils -->
+    <string name="loan_explorer_review">Reviews</string>
+    <string name="loan_exploree_details_title">Instant Mortgage Quotes</string>
+    <string name="loan_exploree_review_descriprion">Here the review description</string>
+    <string name="loan_exploree_review_by">By:make0101(Maryland)</string>
+    <string name="loan_exploree_review_patriot_financial">Patriot Financial</string>
+    <string name="loan_exploree_review_rev">(35 Reviews)</string>
+    <string name="rate_value">4.125 %</string>
+    <string name="rate_value_percentage">4.125</string>
+    <string name="tvrvalue">4.221</string>
+    <string name="fees">Fees</string>
+    <string name="fees_value">$5172.6</string>
+    <string name="payments">Payments</string>
+    <string name="payments_values">$1551</string>
+    <string name="by">By:</string>
+    <string name="types">Type</string>
+    <string name="types_value">30 Year Fixed</string>
+    <string name="one_review">(1 Reviews)</string>
+
+    <!-- End  Loan Explorer Review Deatils -->
+    <!-- <string name="chart">Chart</string> -->
+
+
+    <!-- Start Lending Tree Splash Screen -->
+
+
+    <!-- Ending Lending Tree Splash Screen -->
+
+    <string name="purchase">Purchase</string>
+    <string name="refinance">Refinance</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="fair">Fair</string>
+    <string name="not_so_good">Not So Good</string>
+    <string name="loan_type">Loan Type</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="first_financial_services">First Financial Services,Inc</string>
+    <string name="fifty_k">50K</string>
+    <string name="one_m">1M</string>
+    <string name="two_m">2M</string>
+    <string name="zero_percent">0%</string>
+    <string name="hundred_percent">100%</string>
+    <string name="compare_loan_offers">Compare Loan Offers</string>
+    <string name="single_family">Single Family</string>
+    <string name="town_home">Town Home</string>
+    <string name="condo">Condo</string>
+    <string name="multi_family">Multi - Family</string>
+    <string name="initial_loan_amount">Initial Loan Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="origination_charges_text">Origination Charges</string>
+    <string name="good_faith_estimate_text">Please enter data from your Good Faith Estimate</string>
+    <string name="your_loan_offers">Your Loan Offers</string>
+    <string name="filters">Filters</string>
+    <string name="year_fix"> 30 Year Fixed</string>
+    <string name="enter_zip">Enter Zip</string>
+    <string name="getting_your_live_offers">Requesting quotes from \nlenders in our network</string>
+    <string name="sort_by">Sort By</string>
+    <string name="points">Points</string>
+    <string name="zero">0</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+    <string name="fifteen_year_fixed">15 Year fixed</string>
+    <string name="five_by_one_arm">5/1 ARM</string>
+    <string name="relevance">Relevance</string>
+    <string name="rate">Rate</string>
+    <string name="apr">APR</string>
+    <string name="ratings">Ratings</string>
+    <string name="lender">Lender</string>
+    <string name="rate_text">Interest Rate is great</string>
+    <string name="origination_text"> Origination Charge is lower</string>
+    <string name="origination_detail"> Your Originating Charges are 25\% lower than the average.These charges are negotiable so you can ask to lower them further but it might increase your interest rate.</string>
+    <string name="all_fields_are_empty">All fields are empty</string>
+    <string name="please_enter_first_name">Please enter First Name</string>
+    <string name="please_enter_last_name">Please enter Last Name</string>
+    <string name="please_enter_contact_number">Please enter Contact number</string>
+    <string name="please_enter_email_address">Please enter Email Address</string>
+    <string name="please_enter_zip_code">Please enter Zip Code</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="error_occured">An error occured, please try again.</string>
+    <string name="no_loan_offers">No Results were found, Do you want to try again?</string>
+    <string name="invalid_zip_code">Invalid Zip Code</string>
+    <string name="no_phoneno">The lender is currently unavailable to take your call. Do you want to email instead?</string>
+    <string name="no_offer">We were not able to find any loan offers for you right now. Please try again later.</string>
+    <string name="monthly_pay"> Monthly Payment is lower</string>
+    <string name="monthly_payment_detail"> Payment is a function of interest rate and loan amount so it’s not negotiable. However, with this loan you would be paying 3\% less than average.</string>
+    <string name="dollar">$ </string>
+    <string name="zip_code">Zip Code</string>
+    <string name="invalid_data">Please enter valid data</string>
+    <string name="invalid_error">Error</string>
+    <string name="invalid_phone_number">Contact number should be numeric and should be 10 digits</string>
+    <string name="invalid_email_address">Invalid Email Address</string>
+    <!-- <string name="footer_text">Online Security: Protection Against Fraud\n\nPrivacy Policy &#160; &#160;Terms of Use &#160; &#160;Licenses &amp; Disclosures\n\n</string> -->
+    <string name="footer_text">NMLS # 1136. LendingTree, LLC (LT Technologies in NY), 11115 Rushmore Dr., Charlotte, NC 28277. 1-866-501-2397.\nPrivacy Terms of Use Licenses Disclosures</string>
+    <string name="footer_details">Mortgage rate quotes displayed on LendingTree LoanExplorer℠, including loan pricing data, rates and fees, are provided by third party data providers \nincluding, but not limited to, Mortech®, a registered trademark of Zillow®, LoanXEngine, a product of Mortgage Builder Software, Inc., and LoanTek, Inc. \nNMLS # 1136. LendingTree, LLC (LT Technologies \nin NY), 11115 Rushmore Dr., Charlotte, NC 28277, 1-866-501-2397.\nPrivacy Terms of Use Licenses Disclosures</string>  
+    <!-- <string name="footer_details">LendingTree, LLC is a Marketing Lead Generator and is a Duly Licensed Mortgage Broker, as required by law, with its main office located at 11115 Rushmore Dr., Charlotte, NC 28277, Telephone Number 866&#8211;501&#8211;2397. NMLS Unique Identifier #1136. LendingTree, LLC is known as LT Technologies in lieu of true name LendingTree, LLC in NY. LendingTree technology and processes are patented under U.S. Patent Nos. 6,385,594 and 6,611,816 and licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. © 2014 LendingTree, LLC. All Rights Reserved. This site is directed at, and made available to, persons in the continental U.S., Alaska and Hawaii only.</string> -->
+    <string name="disclaimer_text">By providing a phone number, you are agreeing that LendingTree, its Network Lenders, and/or partners may contact you at this number, or another number that you later provide. You also agree to receive calls and messages from automated dialing systems and/or by pre&#8211;recorded message, and text messages (where applicable) at these numbers. Normal cell phone charges may apply if you provide a cellular number. You may continue with our services without providing a phone number by calling 1&#8211;888&#8211;272&#8211;1355 or by visiting LendingTree LoanExplorer. You may opt&#8211;out of receiving calls at any time by clicking here.</string>
+    <string name="loan_purpose">Loan Purpose</string>
+    <string name="filter_your_results">Filter Your Results</string>
+    <string name="monthly_par">Monthly Payment is on par</string>
+    <string name="monthly_high">Monthly Payment is on higher</string>
+    <string name="monthly_low">Monthly Payment is on lower</string>
+    <string name="payment_low">Payment is a function of interest rate and loan amount so it\'s not negotiable. However, with this loan you would be paying %1$s less than average.</string>
+    <string name="payment_par">Payment is a function of interest rate and loan amount so it\'s not negotiable. With this loan you would be paying about the average amount.</string>
+    <string name="payment_high">Payment is a function of interest rate and loan amount so it\'s not negotiable. However, with this loan you would be paying %1$s more than average so contact the lenders listed to the right to discuss lower payments.</string>
+    <string name="origination_par">Origination Charge is on par</string>
+    <string name="origination_high">Origination Charge is higher</string>
+    <string name="origination_low">Origination Charge is lower</string>
+    <string name="charges_low">Your Origination Charges are %1$s lower than average.These charges are negotiable so you can ask to lower them further but it might increase your interest rate.</string>
+    <string name="charges_par">Your Origination Charges are typical for your loan and criteria.These charges are negotiable so you can ask to lower them further but it might increase your interest rate.</string>
+    <string name="charges_high">Your Origination Charges are %1$s higher than average.These charges are negotiable so you can ask to lower them further but it might increase your interest rate.</string>
+    <string name="interest_great">Interest Rate is great</string>
+    <string name="interest_high">Interest Rate is too high</string>
+    <string name="default_pi">$787</string>
+    <string name="default_pt">$190</string>
+    <string name="default_hi">$67</string>
+    <string name="default_hoa">$0</string>
+    <string name="default_pmi">$59</string>
+    <string name="default_total">$1,103</string>
+    <string name="default_homeprice">200,000</string>
+    <string name="default_downpayment">20% ($40,000)</string>
+    <string name="default_mortgagerate">4.250</string>
+    <string name="detail_totalpayment">Total of Payments</string>
+    <string name="detail_totalpayment_default">$775,500 / 30 Yrs</string>
+    <string name="detail_totalPI">Total of Principal + Interest</string>
+    <string name="detail_totalPI_default">$611,407 / 30 Yrs</string>
+    <string name="detail_totalPrincipal">Total Principal</string>
+    <string name="detail_totalPrincipal_default">$345,251 / 30 Yrs</string>
+    <string name="detail_totalInterest">Total Interest</string>
+    <string name="detail_totalInterest_default">$266,156 / 30 Yrs</string>
+    <string name="result_gfe">Results for your GFE</string>
+    <string name="select_loan">Select Loan Term</string>
+    <string name="default_rate">4.250</string>
+    <string name="request_sent"> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;Thank You \n Your Request has been sent</string>
+
+    <string-array name="loanyear">
+        <item> 1 year term</item>
+        <item>2 year term</item>
+        <item>3 year term</item>
+        <item>4 year term</item>
+        <item>5 year term</item>
+        <item>10 year term</item>
+        <item>15 year term</item>
+        <item>20 year term</item>
+        <item>25 year term</item>
+        <item>30 year term</item>
+        <item>40 year term</item>
+    </string-array>
+
+    <!-- Calculation Float values -->
+    <string name="zero_point_zero_zero_four_four">0.0044</string>
+    <string name="zero_point_two">0.2</string>
+    <string name="zero_point_zero_two">0.02</string>
+    <string name="zero_point_three">0.3</string>
+    <string name="zero_point_one_two_five">0.125</string>
+    <string name="zero_point_three_five">0.35</string>
+    <string name="zero_point_five">0.5</string>
+    <string name="zero_point_eight">0.8</string>
+    <string name="one_point_zero">1.0</string>
+    <string name="one_point_one">1.1</string>
+    <string name="one_point_one_four">1.14</string>
+    <string name="one_point_one_seven_one">1.171</string>
+    <string name="one_point_two_seven_one">1.271</string>
+    <string name="two_point_five">2.5</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="four_two_five">4.25</string>
+    <string name="five">5</string>
+    <string name="five_point_zero">5.0</string>
+    <string name="five_point_zero_zero_zero">5.000</string>
+    <string name="five_point_six_zero_six">5.606</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="seven_point_five">7.5</string>
+    <string name="seven_point_five_zero_zero">7.500</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="nine_point_zero">9.0</string>
+    <string name="ten">10</string>
+    <string name="ten_point_zero">10.0</string>
+    <string name="eleven">11</string>
+    <string name="eleven_point_zero">11.0</string>
+    <string name="twelve">12</string>
+    <string name="twelve_point_zero">12.0</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+    <string name="seventeen">17</string>
+    <string name="eighteen">18</string>
+    <string name="ninteen">19</string>
+    <string name="twenty">20</string>
+    <string name="twenty_three">23</string>
+    <string name="twenty_five">25</string>
+    <string name="thirty">30</string>
+    <string name="thirty_five">35</string>
+    <string name="fourty">40</string>
+    <string name="fourty_eight">48</string>
+    <string name="fifty">50</string>
+    <string name="sixty">60</string>
+    <string name="seventy_five">75</string>
+    <string name="eighty">80</string>
+    <string name="eighty_two">82</string>
+    <string name="ninty_eight">98</string>
+    <string name="hundred">100</string>
+    <string name="hundred_point_zero">100.0</string>
+    <string name="one_zero_five">105</string>
+    <string name="one_twenty_five">125</string>
+    <string name="one_twenty_eight">128</string>
+    <string name="one_fifty">150</string>
+    <string name="one_fifty_eight">158</string>
+    <string name="two_zero_three">203</string>
+    <string name="two_hundred_furteen">214</string>
+    <string name="two_twenty_five">225</string>
+    <string name="two_thirty_nine">239</string>
+    <string name="two_fifty_five">255</string>
+    <string name="two_seventy">270</string>
+    <string name="three_fourty">340</string>
+    <string name="four_four_three">443</string>
+    <string name="five_hundred">500</string>
+    <string name="five_sixty">560</string>
+    <string name="seven_eighty">780</string>
+    <string name="eight_hundred">800</string>
+    <string name="five_thousand">5000</string>
+    <string name="seven_thousand">7000</string>
+    <string name="thirty_thusand">30000</string>
+    <string name="thirty_thusand_point_zero_zero">30000.00</string>
+    <string name="fifty_thousand">50000</string>
+    <string name="fifty_thousand_point_zero_zero">50000.00</string>
+    <string name="sixty_five_thousand_point_zero_zero">65000.00</string>
+    <string name=" one_two_zero_zero_zero_zero">120000</string>
+    <string name=" two_zero_zero_zero_zero_zero">200000</string>
+    <string name=" one_millan">1000000</string>
+    <string name=" one_millan_point_zero_zero">1000000.00</string>
+    <string name=" five_millan">5000000</string>
+    <string name=" two_one_four_seven_four_eight_three_six_four_seven">2147483647</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/fifty_dp"
+    android:background="@color/Dark_Grey"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/two_pixel"
+    android:paddingBottom="@dimen/two_pixel"
+    android:text="@string/our_best_offers_for_you"
+    android:textColor="@color/White"
+    android:textSize="@dimen/sixteen_sp" />

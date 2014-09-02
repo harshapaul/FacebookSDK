@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_Grey"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixty_pixel"
+        android:background="@color/White"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="@integer/num_two" >
+
+                <Button
+                    android:id="@+id/btnCall_LX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/two_pixel"
+                    android:layout_weight="@integer/num_cols"
+                    android:background="@drawable/callloanexp_details" />
+
+                <Button
+                    android:id="@+id/btnMessage_LX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two_pixel"
+                    android:layout_weight="@integer/num_cols"
+                    android:background="@drawable/mailexp_details" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="144px"
+                    android:layout_height="142px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/forty_pixel_xxhdpi"
+                    android:layout_marginTop="@dimen/eighty_pixel"
+                    android:background="@drawable/greenloanexpbox" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/seventy_five_pixel"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvheaderRatingUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/thirty_pixel"
+                        android:singleLine="true"
+                        android:text="@string/loan_exploree_review_patriot_financial"
+                        android:textColor="@color/Text_Black"
+                        android:textSize="@dimen/nineteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvNLMS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/thirty_pixel"
+                        android:layout_marginTop="-10px"
+                        android:singleLine="true"
+                        android:text="NLMS12"
+                        android:textColor="@color/Text_Black"
+                        android:textSize="@dimen/thirteen_sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/fivfteen_pixel"
+                            android:numStars="@integer/num_five"
+                            android:progressDrawable="@drawable/ratebar_theme"
+                            android:stepSize="0.1" />
+
+                        <TextView
+                            android:id="@+id/tvheaderRatingReview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/fivfteen_pixel"
+                            android:text="@string/loan_exploree_review_rev"
+                            android:textColor="@color/blue_lotus"
+                            android:textSize="@dimen/thirteen_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/two_hundred_pixel"
+                android:gravity="center_horizontal" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="@integer/num_two" >
+
+                    <TextView
+                        android:id="@+id/tvRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="right"
+                        android:text="@string/rate"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvRateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/thirteen_pixel"
+                        android:text="@string/rate_value"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/thirty_four_sp"
+                        android:typeface="normal" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="@integer/num_two" >
+
+                    <TextView
+                        android:id="@+id/tvAPR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="right"
+                        android:text="@string/apr"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvAPRValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/thirteen_pixel"
+                        android:text="@string/rate_value"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/thirty_four_sp"
+                        android:typeface="normal" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="@integer/num_two" >
+
+                    <TextView
+                        android:id="@+id/tvFees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="right"
+                        android:text="@string/fees"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvFeesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/thirteen_pixel"
+                        android:text="@string/fees_value"
+                        android:textColor="@color/Text_Black"
+                        android:textSize="@dimen/thirty_three_sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="@integer/num_two" >
+
+                    <TextView
+                        android:id="@+id/tvPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="right"
+                        android:text="@string/payments"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/thirteen_pixel"
+                        android:text="@string/payments_values"
+                        android:textColor="@color/Text_Black"
+                        android:textSize="@dimen/thirty_three_sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="@integer/num_two" >
+
+                    <TextView
+                        android:id="@+id/tvtypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="right"
+                        android:text="@string/types"
+                        android:textSize="@dimen/seventeen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvtypesValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@integer/num_cols"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/thirteen_pixel"
+                        android:text="@string/types_value"
+                        android:textColor="@color/Text_Black"
+                        android:textSize="@dimen/thirty_three_sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/four_hundred_pixel"
+            android:background="@color/Dark_Grey"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/thirty_seven_pixel" >
+
+            <!-- <TextView
+                android:id="@+id/tvFooter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/fivfty_pixel"
+                android:layout_marginLeft="@dimen/seventeen_pixel"
+                android:layout_marginRight="@dimen/seventeen_pixel"
+                android:layout_marginTop="@dimen/twenty_pixel"
+                android:text="@string/footer_details"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/six_point_five_pt" /> -->
+            <TextView
+                android:id="@+id/tvFooter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/thirty_pixel"
+                android:layout_marginLeft="@dimen/thirty_seven_pixel"
+                android:layout_marginRight="@dimen/thirty_seven_pixel"
+                android:layout_marginTop="@dimen/twenty_pixel"
+                android:text="@string/footer_details"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/five_point_eight_pt" />
+            <!-- android:layout_marginTop="@dimen/hundred_pixel" -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
